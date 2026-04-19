@@ -1,14 +1,296 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Cittadinanza Digitale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body>
-    <div class="flex items-center h-screen w-screen justify-center">
-        <p class="font-bold text-xl">Il sito è in costruzione</p>
-    </div>
+<body class="bg-white text-gray-900">
+    <!-- HERO -->
+    <section class="relative h-screen flex flex-row items-center justify-between px-8 border-b gap-2">
+        <div class="flex-col z-10 md:w-1/2">
+            <p class="uppercase text-gray-500 tracking-widest">Educazione civica</p>
+            <h1 class="text-5xl md:text-7xl font-bold md:leading-tight my-3">Cittadinanza<br>
+                <span class="text-blue-600">Digitale</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mb-8">Essere cittadini attivi nella rete significa acquisire consapevolezza degli effetti delle proprie azioni online e sviluppare un senso di responsabilità individuale e collettiva.</p>
+            <div class="flex gap-4 text-sm">
+                <div class="flex flex-col border-r border-gray-300 pr-4">
+                    <p class="text-3xl font-bold">70%</p>
+                    <p class="text-gray-500">ragazzi vittime di odio online</p>
+                </div>
+
+                <div class="flex flex-col border-r border-gray-300 pr-4">
+                    <p class="text-3xl font-bold">1 <span class="text-2xl">su</span> 3</p>
+                    <p class="text-gray-500">ha subito cyberbullismo</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <p class="text-3xl font-bold">&infin;</p>
+                    <p class="text-gray-500">tempo online dei tuoi dati</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="src/bannerHero.jpg" alt="banner"
+        class="hidden md:block inset-0 aspect-auto m-auto z-0
+        md:static md:max-w-xl md:w-1/2">
+    </section>
+
+    <!-- SEZIONE 1: PRINCIPI -->
+    <section class="bg-gray-50 px-8 py-20 border-b">
+
+        <p class="text-3xl font-bold mb-6">I 9 Fondamenti della Cittadinanza Digitale</p>
+        <p class="uppercase font-semibold text-lime-700 mb-5">rispetta te stesso, rispetta gli altri</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-14">
+            <!-- PRINCIPIO 1 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+                <p class="text-2xl font-bold text-gray-400">01</p>
+                <p class="text-xl py-2">Accesso</p>
+                <p class="text-gray-500">Garantire a tutti la possibilità di accedere alla tecnologia, senza esclusioni o barriere.</p>
+            </div>
+
+            <!-- PRINCIPIO 2 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">02</p>
+                <p class="text-xl py-2">Netiquette</p>
+                <p class="text-gray-500">Comportarsi online con rispetto, evitando odio, insulti e atteggiamenti tossici.</p>
+            </div>
+
+            <!-- PRINCIPIO 3 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">03</p>
+                <p class="text-xl py-2">Diritti e Regole</p>
+                <p class="text-gray-500">Conoscere e rispettare le regole: privacy, copyright e libertà di espressione.</p>
+            </div>
+        </div>
+
+        <p class="uppercase font-semibold text-blue-600 mb-5">educa te stesso, comunica con gli altri</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-14">
+            <!-- PRINCIPIO 4 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">04</p>
+                <p class="text-xl py-2">Comunicazione Appropriata</p>
+                <p class="text-gray-500">Esprimersi in modo chiaro, consapevole e responsabile nei contesti online.</p>
+            </div>
+
+            <!-- PRINCIPIO 5 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">05</p>
+                <p class="text-xl py-2">Pensiero Critico</p>
+                <p class="text-gray-500">Saper distinguere informazioni vere da fake news e usare la rete in modo critico.</p>
+            </div>
+
+            <!-- PRINCIPIO 6 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">06</p>
+                <p class="text-xl py-2">Uso dei Servizi</p>
+                <p class="text-gray-500">Effettuare acquisti e operazioni online in modo consapevole e sicuro.</p>
+            </div>
+        </div>
+
+        <p class="uppercase font-semibold text-violet-600 mb-5">proteggi te stesso, proteggi gli altri</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+            <!-- PRINCIPIO 7 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">07</p>
+                <p class="text-xl py-2">Sicurezza</p>
+                <p class="text-gray-500">Proteggere i propri dati e dispositivi da minacce digitali.</p>
+            </div>
+
+            <!-- PRINCIPIO 8 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">08</p>
+                <p class="text-xl py-2">Privacy</p>
+                <p class="text-gray-500">Gestire in modo consapevole le informazioni personali online.</p>
+            </div>
+
+            <!-- PRINCIPIO 9 -->
+            <div class="border-2 bg-white border-gray-200 p-6 rounded-lg">
+                <p class="text-2xl font-bold text-gray-400">09</p>
+                <p class="text-xl py-2">Benessere Digitale</p>
+                <p class="text-gray-500">Usare la tecnologia in modo equilibrato per il proprio benessere.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE 2: CYBERBULLISMO -->
+    <section class="bg-white px-8 py-20 border-b">
+        <p class="text-3xl font-bold mb-6">Prevenzione del Cyberbullismo</p>
+        <div class="grid md:grid-cols-2 gap-10 md:gap-14">
+            <div>
+                <p>Il cyberbullismo è l'uso di tecnologie digitali per molestare, minacciare o umiliare una persona. Essere cittadini digitali responsabili significa riconoscere e contrastare questi fenomeni.</p>
+                <div class="mt-6 flex flex-col gap-2">
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
+                        <span>Non rispondere alle provocazioni del bullo</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
+                        <span>Documentare e salvare le prove degli abusi</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
+                        <span>Segnalare il comportamento alle piattaforme</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
+                        <span>Parlare con un adulto di fiducia</span>
+                    </div>
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
+                        <span>Bloccare l'aggressore e non inoltrare i contenuti</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gray-50 border rounded-lg p-5">
+                <p class="text-lg font-bold">Segnali di allarme</p>
+                <p class="my-2">Chi subisce cyberbullismo può mostrare:</p>
+                <ul class="list-disc list-inside">
+                    <li class="my-1">Ansia e nervosismo quando riceve notifiche</li>
+                    <li class="my-1">Isolamento sociale e ritiro da attività online</li>
+                    <li class="my-1">Cambiamenti nell'umore o nel sonno</li>
+                    <li class="my-1">Paura di andare a scuola</li>
+                    <li class="my-1">Cala il rendimento scolastico</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE 3: FAKE NEWS -->
+    <section class="bg-gray-50 px-8 py-20 border-b">
+        <p class=" text-3xl font-bold mb-6">Fake News e Pensiero Critico</p>
+        <div class="flex flex-col gap-6">
+            <!-- CARD 1: Verifica Fonti -->
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+                <!-- Immagine affianco - per md -->
+                <img src="src/verify.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
+                <!-- Background image per sm e xs -->
+                <div class="md:hidden absolute inset-0">
+                    <img src="src/verify.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                </div>
+                <!-- testo -->
+                <div class="relative md:ml-6">
+                    <p class="text-lg font-semibold">Verifica le Fonti</p>
+                    <p class="text-gray-500 mt-2">
+                        Controlla sempre l'affidabilità delle informazioni prima di considerarle vere. Non tutte le notizie che si
+                        trovano a prima vista sono attendibili: alcune possono provenire da siti poco affidabili, blog personali o
+                        piattaforme che non seguono standard giornalistici. Cerca di capire chi ha pubblicato il contenuto, se si
+                        tratta di una testata riconosciuta, se vengono citate fonti verificabili o dati concreti, e se la notizia è
+                        riportata anche da altri media affidabili. Esaminare la fonte ti aiuta a distinguere tra informazioni
+                        accurate, opinioni e possibili contenuti fuorvianti o falsi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 2: Controllo Data -->
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+                <!-- Immagine affianco - per md -->
+                <img src="src/date.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
+                <!-- Background image per sm e xs -->
+                <div class="md:hidden absolute inset-0">
+                    <img src="src/date.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                </div>
+                <!-- testo -->
+                <div class="relative md:ml-6">
+                    <p class="text-lg font-semibold">Controlla la data</p>
+                    <p class="text-gray-500 mt-2">
+                        Verifica sempre quando è stata pubblicata o aggiornata una notizia. Contenuti datati possono essere 
+                        riproposti come se fossero attuali, creando confusione o allarmismi inutili. Una notizia vera anni fa
+                         potrebbe non essere più valida oggi, oppure potrebbe riferirsi a un contesto completamente diverso. 
+                         Controllare la data ti aiuta a capire se l&apos;informazione è ancora rilevante e affidabile.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CARD 3: Crosschecking -->
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+                <!-- Immagine affianco - per md -->
+                <img src="src/crosschecking.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
+                <!-- Background image per sm e xs -->
+                <div class="md:hidden absolute inset-0">
+                    <img src="src/crosschecking.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                </div>
+                <!-- testo -->
+                <div class="relative md:ml-6">
+                    <p class="text-lg font-semibold">Crosschecking</p>
+                    <p class="text-gray-500 mt-2">
+                        Non fermarti a una sola fonte: confronta la stessa notizia su più siti, giornali o canali informativi 
+                        indipendenti tra loro. Se un&apos;informazione è corretta e rilevante, è probabile che venga riportata 
+                        molto similarmente anche da altre fonti affidabili. Il confronto ti permette di individuare eventuali 
+                        discrepanze, interpretazioni diverse o dettagli mancanti. In questo modo puoi farti un&apos;idea più 
+                        completa e ridurre il rischio di credere a informazioni parziali, distorte o false.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Regola STOP-->
+        <div class="bg-gray-900 rounded-lg p-8 text-white mt-10">
+            <p class="text-lg font-semibold mb-3">La regola dello "STOP"</p>
+            <div class="grid md:grid-cols-4 gap-6 text-sm">
+                <div>
+                    <p class="block text-2xl font-bold text-blue-400 mb-2">S</p>
+                    <p class="font-semibold">Sorgente</p>
+                    <p class="text-gray-400 mt-1">Chi è l&apos;autore? È Affidabile?</p>
+                </div>
+                <div>
+                    <p class="block text-2xl font-bold text-blue-400 mb-2">T</p>
+                    <p class="font-semibold">Testo</p>
+                    <p class="text-gray-400 mt-1">Il titolo è allarmista? Ci sono errori?</p>
+                </div>
+                <div>
+                    <p class="block text-2xl font-bold text-blue-400 mb-2">O</p>
+                    <p class="font-semibold">Obiettivo</p>
+                    <p class="text-gray-400 mt-1">Qual è lo scopo? Informare o manipolare?</p>
+                </div>
+                <div>
+                    <p class="block text-2xl font-bold text-blue-400 mb-2">P</p>
+                    <p class="font-semibold">Prove</p>
+                    <p class="text-gray-400 mt-1">Ci sono fonti citate? Sono verificabili?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: -->
+    <section class="px-8 py-20 border-b">
+        <p class="text-3xl font-bold mb-6">Benessere Digitale</p>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 border rounded-lg p-6">
+                <h2 class="font-semibold mb-3 text-lg">Digital Detox</h2>
+                <p class="text-sm text-gray-600 mb-4">Prenditi pause regolari dai dispositivi. Stacca lo schermo almeno un'ora prima di dormire.</p>
+                <p class="text-xs text-gray-500">Consigliato: 1 giorno a settimana senza social</p>
+            </div>
+
+            <div class="bg-gray-50 border rounded-lg p-6">
+                <h2 class="font-semibold mb-3 text-lg">Ergonomia</h2>
+                <p class="text-sm text-gray-600 mb-4">Mantieni lo schermo a livello degli occhi. Fai pause ogni 20 minuti per riposare la vista.</p>
+                <p class="text-xs text-gray-500">È la distanza costante tra schermo e occhi che li rovina, non solo la luce blu.</p>
+            </div>
+
+            <div class="bg-gray-50 border rounded-lg p-6">
+                <h2 class="font-semibold mb-3 text-lg">Relazioni Reali</h2>
+                <p class="text-sm text-gray-600 mb-4">Non sostituire l'interazione umana con quella digitale. Incontra amici di persona.</p>
+                <p class="text-xs text-gray-500">Equilibrio tra online e offline</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 px-2 py-4 text-sm items-center">
+        <div class="flex w-full justify-between mb-1">
+            <p>Banner di <a href="https://www.freepik.com/author/freepik" class="text-blue-300 hover:underline">Freepik</a></p>
+            <p>Illustrazioni di <a href="https://www.freepik.com/author/pch-vector" class="text-blue-300 hover:underline">Pch.Vector</a> e <a href="https://www.freepik.com/author/jcomp"  class="text-blue-300 hover:underline">jcomp</a></p>
+        </div>
+        <p>&reg; 2026 Edoardo Gozzi, Dave Bill Agbekornu</p>
+    </footer>
 </body>
 </html>
