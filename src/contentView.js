@@ -24,18 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // overlay
         const overlay = document.createElement('div');
         overlay.classList.add('fixed', 'inset-0', 'flex', 'items-center', 'justify-center', 'z-50', 'backdrop-blur-sm');
-        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';   // non riconosciuto da Tailwind, aggiunto manualmente in CSS puro
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 
         // container
         const box = document.createElement('div');
-        box.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'bg-white', 'p-8', 'rounded-lg', 'shadow-lg', 'max-w-lg', 'w-full');
-        
+        const isDesktop = window.matchMedia("(min-width: 768px)").matches;
+
+        if (isDesktop) {
+            box.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'bg-white', 'p-8', 'rounded-lg', 'shadow-lg', 'max-w-lg', 'w-full');
+        } else {
+            box.classList.add('bg-white', 'p-8', 'w-full', 'h-full');
+        }
+
         // numero background
         const bgNum = document.createElement('p');
         bgNum.classList.add('z-10', 'text-[50vh]', 'font-bold', 'text-gray-200/75', 'absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'pointer-events-none');
         bgNum.innerText = index + 1;
         box.appendChild(bgNum);
-
 
         // titolo
         const title = document.createElement('h2');
@@ -46,13 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
         // testo
         const text = document.createElement('p');
         text.classList.add('relative', 'z-[12]', 'text-gray-700', 'text-lg');
-        box.appendChild(text);
         text.innerText = testi[index];
+        box.appendChild(text);
 
+        // bottone chiusura per mobile
+        let closeBtn;
+        if (!isDesktop) {
+            closeBtn = document.createElement('button');
+            closeBtn.classList.add('absolute', 'bottom-4', 'left-1/2', '-translate-x-1/2', 'bg-white', 'p-4', 'rounded-full', 'shadow-md', 'flex', 'items-center', 'justify-center');
+            closeBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
+            box.appendChild(closeBtn);
+        }
 
         box.onclick = (e) => e.stopPropagation();
 
+        // distruzione overlay
         overlay.onclick = () => document.body.removeChild(overlay);
+        if (!isDesktop && closeBtn) {
+            closeBtn.onclick = () => document.body.removeChild(overlay);
+        }
 
         overlay.appendChild(box);
         document.body.appendChild(overlay);
