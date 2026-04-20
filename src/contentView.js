@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // overlay
         const overlay = document.createElement('div');
         overlay.classList.add('fixed', 'inset-0', 'flex', 'items-center', 'justify-center', 'z-50', 'backdrop-blur-sm');
-        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';   // non riconosciuto da Tailwind, aggiunto manualmente in CSS puro
 
         // container
         const box = document.createElement('div');
