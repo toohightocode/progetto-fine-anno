@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cittadinanza Digitale</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="src/styles.min.css" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
@@ -20,7 +19,7 @@
     </nav>
 
     <!-- HERO -->
-    <section class="relative h-screen flex flex-row items-center justify-between px-8 border-b gap-2">
+    <section class="relative h-screen flex flex-row items-center justify-between px-8 border-b border-gray-200 gap-2">
         <div class="flex-col z-10 md:w-1/2">
             <p class="uppercase text-gray-500 tracking-widest">Educazione civica</p>
             <h1 class="text-5xl md:text-7xl font-bold md:leading-tight my-3">Cittadinanza<br>
@@ -52,7 +51,7 @@
 
 
     <!-- SEZIONE 1: PRINCIPI -->
-    <section id="section1" class="bg-gray-50 px-8 py-20 border-b">
+    <section id="section1" class="bg-gray-50 px-8 py-20 border-b border-gray-200">
 
         <p class="text-3xl font-bold mb-6">I 9 Fondamenti della Cittadinanza Digitale</p>
         <p class="uppercase font-semibold text-lime-700 mb-5">rispetta te stesso, rispetta gli altri</p>
@@ -133,7 +132,7 @@
 
 
     <!-- SEZIONE 2: CYBERBULLISMO -->
-    <section id="section2" class="bg-white px-8 py-20 border-b">
+    <section id="section2" class="bg-white px-8 py-20 border-b border-gray-200">
         <p class="text-3xl font-bold mb-6">Prevenzione del Cyberbullismo</p>
         <div class="grid md:grid-cols-2 gap-10 md:gap-14">
             <div>
@@ -161,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-50 border rounded-lg p-5">
+            <div class="bg-gray-50 border-2 border-gray-200 rounded-lg p-5">
                 <p class="text-lg font-bold">Segnali di allarme</p>
                 <p class="my-2">Chi subisce cyberbullismo può mostrare:</p>
                 <ul class="list-disc list-inside">
@@ -177,11 +176,11 @@
 
 
     <!-- SEZIONE 3: FAKE NEWS -->
-    <section id="section3" class="bg-gray-50 px-8 py-20 border-b">
+    <section id="section3" class="bg-gray-50 px-8 py-20 border-b border-gray-200">
         <p class=" text-3xl font-bold mb-6">Fake News e Pensiero Critico</p>
         <div class="flex flex-col gap-6">
             <!-- CARD 1: Verifica Fonti -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
                 <!-- Immagine affianco - per md -->
                 <img src="src/verify.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
@@ -202,7 +201,7 @@
                 </div>
             </div>
             <!-- CARD 2: Controllo Data -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
                 <!-- Immagine affianco - per md -->
                 <img src="src/date.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
@@ -221,7 +220,7 @@
                 </div>
             </div>
             <!-- CARD 3: Crosschecking -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border">
+            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
                 <!-- Immagine affianco - per md -->
                 <img src="src/crosschecking.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
@@ -271,22 +270,22 @@
 
 
     <!-- SECTION 4: Benessere Digitale -->
-    <section id="section4" class="px-8 py-20 border-b">
+    <section id="section4" class="px-8 py-20 border-b border-gray-200">
         <p class="text-3xl font-bold mb-6">Benessere Digitale</p>
         <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-50 border rounded-lg p-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
                 <h2 class="font-semibold mb-3 text-lg">Digital Detox</h2>
                 <p class="text-sm text-gray-600 mb-4">Prenditi pause regolari dai dispositivi. Stacca lo schermo almeno un'ora prima di dormire.</p>
                 <p class="text-xs text-gray-500">Consigliato: 1 giorno a settimana senza social</p>
             </div>
 
-            <div class="bg-gray-50 border rounded-lg p-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
                 <h2 class="font-semibold mb-3 text-lg">Ergonomia</h2>
                 <p class="text-sm text-gray-600 mb-4">Mantieni lo schermo a livello degli occhi. Fai pause ogni 20 minuti per riposare la vista.</p>
                 <p class="text-xs text-gray-500">È la distanza costante tra schermo e occhi che li rovina, non solo la luce blu.</p>
             </div>
 
-            <div class="bg-gray-50 border rounded-lg p-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
                 <h2 class="font-semibold mb-3 text-lg">Relazioni Reali</h2>
                 <p class="text-sm text-gray-600 mb-4">Non sostituire l'interazione umana con quella digitale. Incontra amici di persona.</p>
                 <p class="text-xs text-gray-500">Equilibrio tra online e offline</p>

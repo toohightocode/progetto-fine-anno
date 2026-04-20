@@ -23,15 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // overlay
         const overlay = document.createElement('div');
-        overlay.classList.add('fixed', 'inset-0', 'bg-black', 'bg-opacity-50', 'flex', 'items-center', 'justify-center', 'z-50', 'backdrop-blur-sm');
+        overlay.classList.add('fixed', 'inset-0', 'flex', 'items-center', 'justify-center', 'z-50', 'backdrop-blur-sm');
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 
         // container
         const box = document.createElement('div');
-        box.classList.add('absolute', 'top-1/2', 'left-1/2', 'transform', '-translate-x-1/2', '-translate-y-1/2', 'bg-white', 'p-8', 'rounded-lg', 'shadow-lg', 'max-w-lg', 'w-full');
+        box.classList.add('absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'bg-white', 'p-8', 'rounded-lg', 'shadow-lg', 'max-w-lg', 'w-full');
         
         // numero background
         const bgNum = document.createElement('p');
-        bgNum.classList.add('z-10', 'text-[50vh]', 'font-bold', 'text-gray-200/75', 'absolute', 'top-1/2', 'left-1/2', 'transform', '-translate-x-1/2', '-translate-y-1/2', 'pointer-events-none');
+        bgNum.classList.add('z-10', 'text-[50vh]', 'font-bold', 'text-gray-200/75', 'absolute', 'top-1/2', 'left-1/2', '-translate-x-1/2', '-translate-y-1/2', 'pointer-events-none');
         bgNum.innerText = index + 1;
         box.appendChild(bgNum);
 
