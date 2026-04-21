@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function openExplanation(section) {
         const index = Array.from(sections).indexOf(section);
 
+        document.body.style.overflow = 'hidden';    // blocca scrolling in/volontario
+
         // overlay
         const overlay = document.createElement('div');
         overlay.classList.add('fixed', 'inset-0', 'flex', 'items-center', 'justify-center', 'z-50', 'backdrop-blur-sm');
@@ -50,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // testo
         const text = document.createElement('p');
-        text.classList.add('relative', 'z-[12]', 'text-gray-700', 'text-lg');
+        text.classList.add('relative', 'z-[12]', 'text-gray-700', 'text-lg', 'overflow-y-auto');
+        if (!isDesktop) { text.style.maxHeight = 'calc(100vh - 10rem)'; text.style.overflowY = 'auto';}
         text.innerText = testi[index];
         box.appendChild(text);
 
@@ -58,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let closeBtn;
         if (!isDesktop) {
             closeBtn = document.createElement('button');
-            closeBtn.classList.add('absolute', 'bottom-4', 'left-1/2', '-translate-x-1/2', 'bg-white', 'p-4', 'rounded-full', 'shadow-md', 'flex', 'items-center', 'justify-center');
+            closeBtn.classList.add('absolute', 'bottom-4', 'left-1/2', '-translate-x-1/2', 'bg-white', 'p-4', 'rounded-full', 'shadow-md', 'flex', 'items-center', 'justify-center', 'border', 'border-gray-200');
             closeBtn.innerHTML = '<span class="material-symbols-outlined">close</span>';
             box.appendChild(closeBtn);
         }
@@ -66,9 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
         box.onclick = (e) => e.stopPropagation();
 
         // distruzione overlay
-        overlay.onclick = () => document.body.removeChild(overlay);
+        overlay.onclick = () => { document.body.removeChild(overlay); document.body.style.overflow = ''; };
         if (!isDesktop && closeBtn) {
             closeBtn.onclick = () => document.body.removeChild(overlay);
+            document.body.style.overflow = '';
         }
 
         overlay.appendChild(box);
