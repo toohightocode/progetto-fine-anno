@@ -1,6 +1,3 @@
-// Quiz sulla Cittadinanza Digitale
-// Autore: Edoardo Gozzi, Dave Bill Agbekornu
-
 const quizData = [
     {
         id: 1,
