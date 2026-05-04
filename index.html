@@ -8,34 +8,36 @@
     <link href="src/styles.min.css" rel="stylesheet">
     <!-- CROSS MARK -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+    <script src="src/quiz.js"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body class="text-gray-900 bg-white">
     <!-- NAVBAR MD -->
     <nav id="navbar" class="relative md:fixed -top-14 z-[11] left-1/2 -translate-x-1/2 hidden md:flex md:gap-5 whitespace-nowrap px-4 py-2 rounded-xl max-w-fit bg-white border border-gray-100 shadow-md text-gray-600">
         <a href="#section1">Fondamenta</a>
         <a href="#section2">Cyberbullismo</a>
         <a href="#section3">Fake News</a>
         <a href="#section4">Benessere Digitale</a>
+        <a href="#section5">Quiz Finale</a>
     </nav>
 
     <!-- HERO -->
-    <section class="relative h-screen flex flex-row items-center justify-between px-8 border-b border-gray-200 gap-2">
-        <div class="flex-col z-10 md:w-1/2">
-            <p class="uppercase text-gray-500 tracking-widest">Educazione civica</p>
-            <h1 class="text-5xl md:text-7xl font-bold md:leading-tight my-3">Cittadinanza<br>
+    <section class="relative flex flex-row items-center justify-between h-screen gap-2 px-8 border-b border-gray-200">
+        <div class="z-10 flex-col md:w-1/2">
+            <p class="tracking-widest text-gray-500 uppercase">Educazione civica</p>
+            <h1 class="my-3 text-5xl font-bold md:text-7xl md:leading-tight">Cittadinanza<br>
                 <span class="text-blue-600">Digitale</span>
             </h1>
-            <p class="text-xl text-gray-600 max-w-2xl mb-8">Essere cittadini attivi nella rete significa acquisire consapevolezza degli effetti delle proprie azioni online e sviluppare un senso di responsabilità individuale e collettiva.</p>
+            <p class="max-w-2xl mb-8 text-xl text-gray-600">Essere cittadini attivi nella rete significa acquisire consapevolezza degli effetti delle proprie azioni online e sviluppare un senso di responsabilità individuale e collettiva.</p>
             <div class="flex gap-4 text-sm">
-                <div class="flex flex-col border-r border-gray-300 pr-4">
+                <div class="flex flex-col pr-4 border-r border-gray-300">
                     <p class="text-3xl font-bold">70%</p>
                     <p class="text-gray-500">ragazzi vittime di odio online</p>
                 </div>
 
-                <div class="flex flex-col border-r border-gray-300 pr-4">
+                <div class="flex flex-col pr-4 border-r border-gray-300">
                     <p class="text-3xl font-bold">1 <span class="text-2xl">su</span> 3</p>
                     <p class="text-gray-500">ha subito cyberbullismo</p>
                 </div>
@@ -48,86 +50,85 @@
         </div>
         <img 
         src="src/bannerHero.jpg" alt="banner"
-        class="hidden md:block inset-0 aspect-auto m-auto z-0
-        md:static md:max-w-xl md:w-1/2">
+        class="inset-0 z-0 hidden m-auto md:block aspect-auto md:static md:max-w-xl md:w-1/2">
     </section>
 
 
     <!-- SEZIONE 1: PRINCIPI -->
-    <section id="section1" class="bg-gray-50 px-8 py-20 border-b border-gray-200">
+    <section id="section1" class="px-8 py-20 border-b border-gray-200 bg-gray-50">
 
-        <p class="text-3xl font-bold mb-6">I 9 Fondamenti della Cittadinanza Digitale</p>
-        <p class="uppercase font-semibold text-lime-700 mb-5">rispetta te stesso, rispetta gli altri</p>
+        <p class="mb-6 text-3xl font-bold">I 9 Fondamenti della Cittadinanza Digitale</p>
+        <p class="mb-5 font-semibold uppercase text-lime-700">rispetta te stesso, rispetta gli altri</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-14">
             <!-- PRINCIPIO 1 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">1</p>
-                <p class="text-xl py-2">Accesso</p>
+                <p class="py-2 text-xl">Accesso</p>
                 <p class="text-gray-500">Garantire a tutti la possibilità di accedere alla tecnologia, senza esclusioni o barriere.</p>
             </div>
 
             <!-- PRINCIPIO 2 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">2</p>
-                <p class="text-xl py-2">Netiquette</p>
+                <p class="py-2 text-xl">Netiquette</p>
                 <p class="text-gray-500">Comportarsi online con rispetto, evitando odio, insulti e atteggiamenti tossici.</p>
             </div>
 
             <!-- PRINCIPIO 3 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">3</p>
-                <p class="text-xl py-2">Diritti e Regole</p>
+                <p class="py-2 text-xl">Diritti e Regole</p>
                 <p class="text-gray-500">Conoscere e rispettare le regole: privacy, copyright e libertà di espressione.</p>
             </div>
         </div>
 
-        <p class="uppercase font-semibold text-blue-600 mb-5">educa te stesso, comunica con gli altri</p>
+        <p class="mb-5 font-semibold text-blue-600 uppercase">educa te stesso, comunica con gli altri</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-14">
             <!-- PRINCIPIO 4 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">4</p>
-                <p class="text-xl py-2">Comunicazione Appropriata</p>
+                <p class="py-2 text-xl">Comunicazione Appropriata</p>
                 <p class="text-gray-500">Esprimersi in modo chiaro, consapevole e responsabile nei contesti online.</p>
             </div>
 
             <!-- PRINCIPIO 5 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">5</p>
-                <p class="text-xl py-2">Pensiero Critico</p>
+                <p class="py-2 text-xl">Pensiero Critico</p>
                 <p class="text-gray-500">Saper distinguere informazioni vere da fake news e usare la rete in modo critico.</p>
             </div>
 
             <!-- PRINCIPIO 6 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">6</p>
-                <p class="text-xl py-2">Uso dei Servizi</p>
+                <p class="py-2 text-xl">Uso dei Servizi</p>
                 <p class="text-gray-500">Effettuare acquisti e operazioni online in modo consapevole e sicuro.</p>
             </div>
         </div>
 
-        <p class="uppercase font-semibold text-violet-600 mb-5">proteggi te stesso, proteggi gli altri</p>
+        <p class="mb-5 font-semibold uppercase text-violet-600">proteggi te stesso, proteggi gli altri</p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
             <!-- PRINCIPIO 7 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">7</p>
-                <p class="text-xl py-2">Sicurezza</p>
+                <p class="py-2 text-xl">Sicurezza</p>
                 <p class="text-gray-500">Proteggere i propri dati e dispositivi da minacce digitali.</p>
             </div>
 
             <!-- PRINCIPIO 8 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">8</p>
-                <p class="text-xl py-2">Privacy</p>
+                <p class="py-2 text-xl">Privacy</p>
                 <p class="text-gray-500">Gestire in modo consapevole le informazioni personali online.</p>
             </div>
 
             <!-- PRINCIPIO 9 -->
-            <div class="sectionFundamentals border-2 bg-white border-gray-200 p-6 rounded-lg hover:shadow-lg hover:cursor-pointer transition-shadow duration-300">
+            <div class="p-6 transition-shadow duration-300 bg-white border-2 border-gray-200 rounded-lg sectionFundamentals hover:shadow-lg hover:cursor-pointer">
                 <p class="text-2xl font-bold text-gray-400">9</p>
-                <p class="text-xl py-2">Benessere Digitale</p>
+                <p class="py-2 text-xl">Benessere Digitale</p>
                 <p class="text-gray-500">Usare la tecnologia in modo equilibrato per il proprio benessere.</p>
             </div>
         </div>
@@ -135,12 +136,12 @@
 
 
     <!-- SEZIONE 2: CYBERBULLISMO -->
-    <section id="section2" class="bg-white px-8 py-20 border-b border-gray-200">
-        <p class="text-3xl font-bold mb-6">Prevenzione del Cyberbullismo</p>
-        <div class="grid md:grid-cols-2 gap-10 md:gap-14">
+    <section id="section2" class="px-8 py-20 bg-white border-b border-gray-200">
+        <p class="mb-6 text-3xl font-bold">Prevenzione del Cyberbullismo</p>
+        <div class="grid gap-10 md:grid-cols-2 md:gap-14">
             <div>
                 <p>Il cyberbullismo è l'uso di tecnologie digitali per molestare, minacciare o umiliare una persona. Essere cittadini digitali responsabili significa riconoscere e contrastare questi fenomeni.</p>
-                <div class="mt-6 flex flex-col gap-2">
+                <div class="flex flex-col gap-2 mt-6">
                     <div class="flex flex-row items-center gap-3">
                         <span class="block bg-red-500 w-1.5 h-1.5 rounded-full"></span>
                         <span>Non rispondere alle provocazioni del bullo</span>
@@ -163,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gray-50 border-2 border-gray-200 rounded-lg p-5">
+            <div class="p-5 border-2 border-gray-200 rounded-lg bg-gray-50">
                 <p class="text-lg font-bold">Segnali di allarme</p>
                 <p class="my-2">Chi subisce cyberbullismo può mostrare:</p>
                 <ul class="list-disc list-inside">
@@ -179,21 +180,21 @@
 
 
     <!-- SEZIONE 3: FAKE NEWS -->
-    <section id="section3" class="bg-gray-50 px-8 py-20 border-b border-gray-200">
-        <p class=" text-3xl font-bold mb-6">Fake News e Pensiero Critico</p>
+    <section id="section3" class="px-8 py-20 border-b border-gray-200 bg-gray-50">
+        <p class="mb-6 text-3xl font-bold ">Fake News e Pensiero Critico</p>
         <div class="flex flex-col gap-6">
             <!-- CARD 1: Verifica Fonti -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
+            <div class="relative flex items-center p-6 overflow-hidden bg-white border-2 border-gray-200 rounded-3xl">
                 <!-- Immagine affianco - per md -->
                 <img src="src/verify.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
-                <div class="md:hidden absolute inset-0">
-                    <img src="src/verify.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 md:hidden">
+                    <img src="src/verify.jpg" alt="illustrazione" class="object-cover w-full h-full opacity-20">
                 </div>
                 <!-- testo -->
                 <div class="relative md:ml-6">
                     <p class="text-lg font-semibold">Verifica le Fonti</p>
-                    <p class="text-gray-500 mt-2">
+                    <p class="mt-2 text-gray-500">
                         Controlla sempre l'affidabilità delle informazioni prima di considerarle vere. Non tutte le notizie che si
                         trovano a prima vista sono attendibili: alcune possono provenire da siti poco affidabili, blog personali o
                         piattaforme che non seguono standard giornalistici. Cerca di capire chi ha pubblicato il contenuto, se si
@@ -204,17 +205,17 @@
                 </div>
             </div>
             <!-- CARD 2: Controllo Data -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
+            <div class="relative flex items-center p-6 overflow-hidden bg-white border-2 border-gray-200 rounded-3xl">
                 <!-- Immagine affianco - per md -->
                 <img src="src/date.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
-                <div class="md:hidden absolute inset-0">
-                    <img src="src/date.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 md:hidden">
+                    <img src="src/date.jpg" alt="illustrazione" class="object-cover w-full h-full opacity-20">
                 </div>
                 <!-- testo -->
                 <div class="relative md:ml-6">
                     <p class="text-lg font-semibold">Controlla la data</p>
-                    <p class="text-gray-500 mt-2">
+                    <p class="mt-2 text-gray-500">
                         Verifica sempre quando è stata pubblicata o aggiornata una notizia. Contenuti datati possono essere 
                         riproposti come se fossero attuali, creando confusione o allarmismi inutili. Una notizia vera anni fa
                          potrebbe non essere più valida oggi, oppure potrebbe riferirsi a un contesto completamente diverso. 
@@ -223,17 +224,17 @@
                 </div>
             </div>
             <!-- CARD 3: Crosschecking -->
-            <div class="relative flex items-center bg-white rounded-3xl p-6 overflow-hidden border-2 border-gray-200">
+            <div class="relative flex items-center p-6 overflow-hidden bg-white border-2 border-gray-200 rounded-3xl">
                 <!-- Immagine affianco - per md -->
                 <img src="src/crosschecking.jpg" alt="illustrazione" class="hidden md:block w-[20rem] h-full object-cover flex-shrink-0">
                 <!-- Background image per sm e xs -->
-                <div class="md:hidden absolute inset-0">
-                    <img src="src/crosschecking.jpg" alt="illustrazione" class="w-full h-full object-cover opacity-20">
+                <div class="absolute inset-0 md:hidden">
+                    <img src="src/crosschecking.jpg" alt="illustrazione" class="object-cover w-full h-full opacity-20">
                 </div>
                 <!-- testo -->
                 <div class="relative md:ml-6">
                     <p class="text-lg font-semibold">Crosschecking</p>
-                    <p class="text-gray-500 mt-2">
+                    <p class="mt-2 text-gray-500">
                         Non fermarti a una sola fonte: confronta la stessa notizia su più siti, giornali o canali informativi 
                         indipendenti tra loro. Se un&apos;informazione è corretta e rilevante, è probabile che venga riportata 
                         molto similarmente anche da altre fonti affidabili. Il confronto ti permette di individuare eventuali 
@@ -244,28 +245,28 @@
             </div>
         </div>
         <!-- Regola STOP-->
-        <div class="bg-gray-900 rounded-lg p-8 text-white mt-10">
-            <p class="text-lg font-semibold mb-3">La regola dello "STOP"</p>
-            <div class="grid md:grid-cols-4 gap-6 text-sm">
+        <div class="p-8 mt-10 text-white bg-gray-900 rounded-lg">
+            <p class="mb-3 text-lg font-semibold">La regola dello "STOP"</p>
+            <div class="grid gap-6 text-sm md:grid-cols-4">
                 <div>
-                    <p class="block text-2xl font-bold text-blue-400 mb-2">S</p>
+                    <p class="block mb-2 text-2xl font-bold text-blue-400">S</p>
                     <p class="font-semibold">Sorgente</p>
-                    <p class="text-gray-400 mt-1">Chi è l&apos;autore? È Affidabile?</p>
+                    <p class="mt-1 text-gray-400">Chi è l&apos;autore? È Affidabile?</p>
                 </div>
                 <div>
-                    <p class="block text-2xl font-bold text-blue-400 mb-2">T</p>
+                    <p class="block mb-2 text-2xl font-bold text-blue-400">T</p>
                     <p class="font-semibold">Testo</p>
-                    <p class="text-gray-400 mt-1">Il titolo è allarmista? Ci sono errori?</p>
+                    <p class="mt-1 text-gray-400">Il titolo è allarmista? Ci sono errori?</p>
                 </div>
                 <div>
-                    <p class="block text-2xl font-bold text-blue-400 mb-2">O</p>
+                    <p class="block mb-2 text-2xl font-bold text-blue-400">O</p>
                     <p class="font-semibold">Obiettivo</p>
-                    <p class="text-gray-400 mt-1">Qual è lo scopo? Informare o manipolare?</p>
+                    <p class="mt-1 text-gray-400">Qual è lo scopo? Informare o manipolare?</p>
                 </div>
                 <div>
-                    <p class="block text-2xl font-bold text-blue-400 mb-2">P</p>
+                    <p class="block mb-2 text-2xl font-bold text-blue-400">P</p>
                     <p class="font-semibold">Prove</p>
-                    <p class="text-gray-400 mt-1">Ci sono fonti citate? Sono verificabili?</p>
+                    <p class="mt-1 text-gray-400">Ci sono fonti citate? Sono verificabili?</p>
                 </div>
             </div>
         </div>
@@ -274,32 +275,49 @@
 
     <!-- SECTION 4: Benessere Digitale -->
     <section id="section4" class="px-8 py-20 border-b border-gray-200">
-        <p class="text-3xl font-bold mb-6">Benessere Digitale</p>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <h2 class="font-semibold mb-3 text-lg">Digital Detox</h2>
-                <p class="text-sm text-gray-600 mb-4">Prenditi pause regolari dai dispositivi. Stacca lo schermo almeno un'ora prima di dormire.</p>
+        <p class="mb-6 text-3xl font-bold">Benessere Digitale</p>
+        <div class="grid gap-6 md:grid-cols-3">
+            <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+                <h2 class="mb-3 text-lg font-semibold">Digital Detox</h2>
+                <p class="mb-4 text-sm text-gray-600">Prenditi pause regolari dai dispositivi. Stacca lo schermo almeno un'ora prima di dormire.</p>
                 <p class="text-xs text-gray-500">Consigliato: 1 giorno a settimana senza social</p>
             </div>
 
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <h2 class="font-semibold mb-3 text-lg">Ergonomia</h2>
-                <p class="text-sm text-gray-600 mb-4">Mantieni lo schermo a livello degli occhi. Fai pause ogni 20 minuti per riposare la vista.</p>
+            <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+                <h2 class="mb-3 text-lg font-semibold">Ergonomia</h2>
+                <p class="mb-4 text-sm text-gray-600">Mantieni lo schermo a livello degli occhi. Fai pause ogni 20 minuti per riposare la vista.</p>
                 <p class="text-xs text-gray-500">È la distanza costante tra schermo e occhi che li rovina, non solo la luce blu.</p>
             </div>
 
-            <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <h2 class="font-semibold mb-3 text-lg">Relazioni Reali</h2>
-                <p class="text-sm text-gray-600 mb-4">Non sostituire l'interazione umana con quella digitale. Incontra amici di persona.</p>
+            <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
+                <h2 class="mb-3 text-lg font-semibold">Relazioni Reali</h2>
+                <p class="mb-4 text-sm text-gray-600">Non sostituire l'interazione umana con quella digitale. Incontra amici di persona.</p>
                 <p class="text-xs text-gray-500">Equilibrio tra online e offline</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5" class="px-8 py-20 border-b border-gray-200 bg-gray-50">
+        <div class="max-w-4xl p-8 mx-auto bg-white border-2 border-orange-200 shadow-sm rounded-2xl">
+            <p class="mb-2 text-sm font-semibold tracking-wider text-orange-500 uppercase">Testa le tue conoscenze</p>
+            <h2 class="mb-8 text-3xl font-bold text-gray-900">Quiz sulla Cittadinanza Digitale</h2>
+            
+            <div id="quiz-container" class="space-y-8">
+                <!-- Le domande vengono inserite da JS -->
+            </div>
+            
+            <div id="quiz-result" class="hidden mt-8 text-center">
+                <p class="text-2xl font-bold text-gray-900">Quiz completato!</p>
+                <p class="mt-2 text-lg text-gray-600">Hai totalizzato <span id="score" class="font-bold text-orange-600"></span> su <span id="total" class="font-bold text-gray-900"></span></p>
+                <button id="restart-btn" class="px-6 py-2 mt-6 font-semibold text-white transition-colors bg-orange-500 rounded-lg hover:bg-orange-600">Riprova</button>
             </div>
         </div>
     </section>
 
 
     <!-- FOOTER -->
-    <footer class="bg-gray-900 text-gray-400 px-2 py-4 text-sm items-center">
-        <div class="flex w-full justify-between mb-1">
+    <footer class="items-center px-2 py-4 text-sm text-gray-400 bg-gray-900">
+        <div class="flex justify-between w-full mb-1">
             <p>Banner di <a href="https://www.freepik.com/author/freepik" class="text-blue-300 hover:underline">Freepik</a></p>
             <p>Illustrazioni di <a href="https://www.freepik.com/author/pch-vector" class="text-blue-300 hover:underline">Pch.Vector</a> e <a href="https://www.freepik.com/author/jcomp"  class="text-blue-300 hover:underline">jcomp</a></p>
         </div>
